@@ -3,7 +3,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4; /* Fond plus clair pour faire ressortir les couleurs orange et bleu */
+  background-color: #f4f4f4; /* Fond plus clair pour faire ressortir les couleurs */
 }
 
 .container {
@@ -47,7 +47,7 @@ header nav ul li a {
 
 /* Effet de survol pour les liens */
 header nav ul li a:hover {
-  color: #ffa500; /* Orange */
+  color: #e65c00; /* Orange foncé */
   text-decoration: underline;
 }
 
@@ -122,14 +122,14 @@ footer {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ffa500; /* Bordure orange */
+  border: 1px solid #e65c00; /* Bordure orange foncé */
   border-radius: 5px;
 }
 
 #contact-form button {
   width: 100%;
   padding: 10px;
-  background-color: #ffa500; /* Bouton orange */
+  background-color: #e65c00; /* Bouton orange foncé */
   border: none;
   border-radius: 5px;
   cursor: pointer;
