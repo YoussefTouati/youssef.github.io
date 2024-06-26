@@ -1,27 +1,48 @@
-// Ajout d'un Ècouteur d'ÈvÈnements pour le chargement du DOM
+// Ajout d'un √©couteur d'√©v√©nements pour le chargement du DOM
 document.addEventListener('DOMContentLoaded', function () {
+    // Animation initiale pour les √©l√©ments de la page
+    const elements = document.querySelectorAll('.about, .travel-item, .social-icon, .contact-section');
+    elements.forEach(el => {
+        el.style.opacity = 0;
+        el.style.transform = 'translateY(20px)';
+    });
+
+    setTimeout(() => {
+        elements.forEach(el => {
+            el.style.opacity = 1;
+            el.style.transform = 'translateY(0)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        });
+    }, 300);
+
     // Gestion de la soumission du formulaire de contact
     var contactForm = document.getElementById('contact-form');
     contactForm.addEventListener('submit', function (event) {
-        event.preventDefault(); // EmpÍche la soumission par dÈfaut du formulaire
-        var email = document.getElementById('email').value;
-        var message = document.getElementById('message').value;
+        event.preventDefault(); // Emp√™che la soumission par d√©faut du formulaire
+        var email = document.getElementById('email');
+        var message = document.getElementById('message');
 
-        // Validation simple (vous pouvez Ètendre cela avec une logique plus complexe)
-        if (email.trim() === '' || message.trim() === '') {
+        // Validation simple (vous pouvez √©tendre cela avec une logique plus complexe)
+        if (email.value.trim() === '' || message.value.trim() === '') {
             alert('Veuillez remplir tous les champs.');
             return;
         }
 
-        // Ici, vous enverriez gÈnÈralement les donnÈes ‡ un serveur
-        console.log('Email:', email);
-        console.log('Message:', message);
+        // Animation de confirmation de soumission
+        contactForm.style.opacity = 0.5;
+        setTimeout(() => {
+            contactForm.style.opacity = 1;
+        }, 500);
+
+        // Ici, vous enverriez g√©n√©ralement les donn√©es √† un serveur
+        console.log('Email:', email.value);
+        console.log('Message:', message.value);
 
         // Effacer les champs du formulaire
         email.value = '';
         message.value = '';
 
-        // Fournir un retour ‡ l'utilisateur
-        alert('Merci pour votre message ! Nous vous contacterons bientÙt.');
+        // Fournir un retour √† l'utilisateur
+        alert('Merci pour votre message ! Nous vous contacterons bient√¥t.');
     });
 });
