@@ -1,144 +1,48 @@
-/* Styles de base */
-body, html {
+/* Ajoutez vos styles CSS ici */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4; /* Fond plus clair pour faire ressortir les couleurs */
+  box-sizing: border-box;
 }
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-}
-
-/* Animation de fondu pour tous les éléments */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-* {
-  animation: fadeIn 1s ease-in-out;
-}
-
-/* En-tête */
 header {
-  background-color: #0047ab; /* Bleu foncé */
-  color: #fff;
+  background-color: #f2f2f2;
   padding: 10px 0;
+  text-align: center;
 }
-
-header nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-header nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Effet de survol pour les liens */
-header nav ul li a:hover {
-  color: #e65c00; /* Orange foncé */
-  text-decoration: underline;
-}
-
-/* Section 'À propos' */
-.about-section {
+nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.profile img {
-  border-radius: 50%;
-  animation: rotateIn 2s infinite linear;
-}
-
-@keyframes rotateIn {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-/* Galerie */
-.gallery-section {
-  padding: 20px 0;
-}
-
-.travel-item {
+  justify-content: center;
   margin-bottom: 20px;
 }
-
-.travel-image {
-  width: 2cm; /* Largeur fixée à 2 cm */
-  height: auto; /* Hauteur ajustée automatiquement */
-  border: 5px solid #0047ab; /* Bordure bleue */
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Suppression de l'animation de rotation */
-.profile img {
-  border-radius: 50%;
-  /* L'animation rotateIn a été retirée */
-}
-
-/* Réseaux sociaux */
-.social-media-section {
-  padding: 20px 0;
-}
-
-.social-icon {
-  display: inline-block;
-  margin-right: 10px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.social-icon:hover {
-  transform: translateY(-5px);
-}
-
-/* Pied de page */
-footer {
-  background-color: #0047ab; /* Bleu foncé */
-  color: #fff;
+nav a {
+  color: black;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+nav a:hover {
+  background-color: #ddd;
+}
+footer {
+  background-color: #f2f2f2;
   padding: 10px 0;
+  text-align: center;
 }
-
-/* Formulaire de contact */
-#contact-form {
-  max-width: 500px;
-  margin: auto;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-#contact-form input,
-#contact-form textarea {
-  width: 100%;
+input, textarea {
+  margin: 10px 0;
   padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #e65c00; /* Bordure orange foncé */
-  border-radius: 5px;
+  width: 90%;
+  max-width: 300px;
 }
-
-#contact-form button {
-  width: 100%;
-  padding: 10px;
-  background-color: #e65c00; /* Bouton orange foncé */
-  border: none;
-  border-radius: 5px;
+button {
+  padding: 10px 20px;
   cursor: pointer;
-  font-weight: bold;
 }
-
-#contact-form button:hover {
-  background-color: #0047ab; /* Bleu foncé */
-  color: #fff;
-}
+/* Continuez à ajouter des styles pour correspondre à votre maquette */
