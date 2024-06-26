@@ -1,0 +1,201 @@
+﻿/* Importation de la police Google */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* En-tête */
+header {
+    background-color: #555;
+    color: #ddd;
+    padding: 20px 0;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+    nav ul li {
+        display: inline;
+        margin-left: 20px;
+    }
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Section À propos */
+.about-section {
+    background-color: #fff;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/* Galerie */
+.gallery-section {
+    padding: 40px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+..travel-item {
+    margin: 10px;
+    text-align: center; /* Centre l'image et la description */
+}
+
+.travel-image {
+    width: 200px; /* ou la taille que vous préférez */
+    height: auto;
+    border-radius: 10px; /* pour des coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* une légère ombre pour un effet de profondeur */
+}
+
+.image-description {
+    margin-top: 5px; /* Espace entre l'image et la description */
+    color: #666; /* Couleur du texte de la description */
+    font-size: 0.9em; /* Taille du texte de la description */
+}
+
+/* Réseaux sociaux */
+.social-media-section {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+    .social-icon:hover {
+        transform: scale(1.1);
+    }
+
+.facebook .icon {
+    background-image: url('chemin/vers/facebook-icon.png');
+}
+
+.twitter .icon {
+    background-image: url('chemin/vers/twitter-icon.png');
+}
+
+.instagram .icon {
+    background-image: url('chemin/vers/instagram-icon.png');
+}
+
+.linkedin .icon {
+    background-image: url('chemin/vers/linkedin-icon.png');
+}
+
+.social-icon .icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    margin-right: 8px;
+}
+
+/* Section Contact */
+.contact-section {
+    padding: 40px 0;
+}
+
+#contact-form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+    #contact-form input,
+    #contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 2px solid #333;
+        background-color: transparent;
+        color: #333;
+    }
+
+    #contact-form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #5c5c5c;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+/* Pied de page */
+footer {
+    background-color: #555;
+    color: #ddd;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Médias queries pour la réactivité */
+@media (max-width: 768px) {
+    .header-container,
+    .about-section,
+    .social-icons {
+        flex-direction: column;
+    }
+
+    .profile-pic {
+        margin-bottom: 20px;
+    }
+
+    .social-icon {
+        margin-bottom: 10px;
+    }
+}
