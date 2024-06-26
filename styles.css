@@ -78,14 +78,16 @@ header nav ul li a:hover {
 }
 
 .travel-image {
-  width: 100%;
-  height: auto;
+  width: 2cm; /* Largeur fixée à 2 cm */
+  height: auto; /* Hauteur ajustée automatiquement */
   border: 5px solid #0047ab; /* Bordure bleue */
   transition: transform 0.3s ease-in-out;
 }
 
-.travel-image:hover {
-  transform: scale(1.05);
+/* Suppression de l'animation de rotation */
+.profile img {
+  border-radius: 50%;
+  /* L'animation rotateIn a été retirée */
 }
 
 /* Réseaux sociaux */
