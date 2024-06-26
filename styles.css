@@ -3,6 +3,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4; /* Fond plus clair pour faire ressortir les couleurs orange et bleu */
 }
 
 .container {
@@ -23,7 +24,7 @@ body, html {
 
 /* En-tête */
 header {
-  background-color: #333;
+  background-color: #0047ab; /* Bleu foncé */
   color: #fff;
   padding: 10px 0;
 }
@@ -46,7 +47,7 @@ header nav ul li a {
 
 /* Effet de survol pour les liens */
 header nav ul li a:hover {
-  color: #f0db4f;
+  color: #ffa500; /* Orange */
   text-decoration: underline;
 }
 
@@ -79,7 +80,7 @@ header nav ul li a:hover {
 .travel-image {
   width: 100%;
   height: auto;
-  border: 5px solid #333;
+  border: 5px solid #0047ab; /* Bordure bleue */
   transition: transform 0.3s ease-in-out;
 }
 
@@ -104,7 +105,7 @@ header nav ul li a:hover {
 
 /* Pied de page */
 footer {
-  background-color: #333;
+  background-color: #0047ab; /* Bleu foncé */
   color: #fff;
   text-align: center;
   padding: 10px 0;
@@ -121,14 +122,14 @@ footer {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #333;
+  border: 1px solid #ffa500; /* Bordure orange */
   border-radius: 5px;
 }
 
 #contact-form button {
   width: 100%;
   padding: 10px;
-  background-color: #f0db4f;
+  background-color: #ffa500; /* Bouton orange */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -136,6 +137,6 @@ footer {
 }
 
 #contact-form button:hover {
-  background-color: #333;
+  background-color: #0047ab; /* Bleu foncé */
   color: #fff;
 }
